@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    /* Importando a fonte Montserrat do Google Fonts */
+
+:root { /*Definições na raiz: */
+    --font-family: 'Montserrat', sans-serif; /* Definiu a fonte para todo a página */
+    --bg-color:#2155CD ; /* Utilizando uma variável para ser usada na definição do background */
+    --primary-color: #E8F9FD ; /* Utilizando uma variável para ser usada na definição da cor da fonte do texto */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh; /* Definindo a altura mínima do Body */
+    display: flex; /* Utilizando o Flexbox para manipular os elementos internos do "body" */
+    flex-direction: column; /* Posicionando a direção do flex direction para posição coluna */
+    align-items: center; /* Em relação a posição coluna, centralizando os filhos do body no sentido horizontal */
+    justify-content: center; /* Em relação a posição coluna, centralizando os filhos do body no sentido vertical  */
+    text-align: center; /* Alinhando o texto ao centro*/
+    margin: 0;
+    font-family: var(--font-family); /* Definindo a fonte de todo o documento */
+}
+
+h1 {
+    font-size: 5em; /* Definindo o tamanho da fonte*/
+        /* Definindo o tamanho em "em", pois unidade faz relação do tamanho da fonte com o tamanho da tela do dispositivo */
+        /* Leitura sobre unidades nas páginas Web: https://www.w3.org/Style/Examples/007/units.pt_BR.html */
+}
+
+h3 {
+    font-size: 2em; /* Definindo o tamanho da fonte*/
+    margin-top: 20px; /* Definindo o tamanho da margin de cima do h3*/
+}
+
+.mensagem {
+    font-size: 1.5em; /* Definindo o tamanho da fonte*/
+    margin-top: 40px; /* Definindo o tamanho da margin de cima da mensagem*/
+}
+
+.box {
+    border: 2px solid var(--primary-color);
+        /*Criando uma bordar = border: espessura da borda + formado da borda + cor da borda */
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px; /* Criando margem interna no box */
+    margin: 20px; /*Criando margem externa no box*/
+}
